@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="520.0" prefWidth="340.0" spacing="8.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="520.0" prefWidth="340.0" spacing="8.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calculator.Controller">
    <padding>
       <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
    </padding>
@@ -71,42 +71,42 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="7" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="7" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="4" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="4" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="91.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button layoutX="91.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="171.0" layoutY="177.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button layoutX="171.0" layoutY="177.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="171.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1" GridPane.rowIndex="4">
+            <Button layoutX="171.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="1" GridPane.rowIndex="4">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="321.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button layoutX="10.0" layoutY="321.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <font>
                   <Font size="24.0" />
                </font>
@@ -121,7 +121,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="252.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <Button layoutX="252.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <font>
                   <Font size="24.0" />
                </font>
@@ -136,7 +136,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="393.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <Button layoutX="10.0" layoutY="393.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDigit" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <font>
                   <Font size="24.0" />
                </font>
@@ -154,6 +154,4 @@
          </children>
       </GridPane>
    </children>
-</VBox> 
-
-
+</VBox>
