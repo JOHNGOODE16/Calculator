@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
+	private CalculatorHelper helper = new CalculatorHelper();
 	@FXML private TextField display;
 	@FXML private Label history;
 	
@@ -28,11 +29,22 @@ public class Controller {
 	
 	@FXML
 	private void onAddition(ActionEvent e) {
-		String d =((Button) e.getSource()).getText();
 		if(!(display.getText().isEmpty() && display.getText() == null)) {
-			history.setText(display.getText() + " " + d);
+			String d =((Button) e.getSource()).getText();
+			history.setText(display.getText() + d);
+			display.clear();
 		}
-		
 	}
+	
+	@FXML
+	private void onEqual(ActionEvent e) {
+		if(!(display.getText().isEmpty() && display.getText() == null)) {
+			String d =((Button) e.getSource()).getText();
+			history.setText(history.getText() +  display.getText() + d);
+			double result = helper.calculate(history.getText());
+			display.setText(String.valueOf(result));
+		}
+	}
+		
 
 }
