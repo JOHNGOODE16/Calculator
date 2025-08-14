@@ -36,7 +36,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="CE" GridPane.columnIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClear" text="CE" GridPane.columnIndex="1">
                <font>
                   <Font size="24.0" />
                </font>

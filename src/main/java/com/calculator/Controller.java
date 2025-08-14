@@ -19,11 +19,9 @@ public class Controller {
             display.setText(cur + d);
         }
     }
-	
-/*	private void onClear(ActionEvent e) {
-		String 
+	@FXML
+	private void onClear(ActionEvent e) {
+		display.clear();
 	}
-	*/
+
 }
-	
-SSS
