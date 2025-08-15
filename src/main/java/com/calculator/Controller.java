@@ -37,6 +37,15 @@ public class Controller {
 	}
 	
 	@FXML
+	private void onSubtraction(ActionEvent e) {
+		if(!(display.getText().isEmpty() && display.getText() == null)) {
+			String d =((Button) e.getSource()).getText();
+			history.setText(display.getText() + d);
+			display.clear();
+		}
+	}
+	
+	@FXML
 	private void onEqual(ActionEvent e) {
 		if(!(display.getText().isEmpty() && display.getText() == null)) {
 			String d =((Button) e.getSource()).getText();

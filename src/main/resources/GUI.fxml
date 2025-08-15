@@ -123,7 +123,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="252.0" layoutY="177.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button layoutX="252.0" layoutY="177.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSubtraction" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>

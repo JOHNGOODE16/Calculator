@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
-		// adjust the path if your FXML lives elsewhere
 		Parent root = FXMLLoader.load(getClass().getResource("/GUI.fxml"));
 		stage.setScene(new Scene(root, 340, 520));
 		stage.setTitle("Calculator");
