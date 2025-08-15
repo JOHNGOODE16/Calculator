@@ -18,11 +18,12 @@ A simple desktop calculator built with Java 24, JavaFX, and Maven. Supports basi
 - JavaFX **24.0.2**
 
 ## Getting Started
-bash
-  `git clone https://github.com/JOHNGOODE16/Calculator
-  cd Calculator
-  mvn clean compile
-  mvn javafx:run`
+```bash
+git clone https://github.com/JOHNGOODE16/Calculator
+cd Calculator
+mvn clean compile
+mvn javafx:run
+
 
 ##Structure
 src/main/java/com/calculator/
@@ -31,6 +32,7 @@ src/main/java/com/calculator/
   └─ CalculatorHelper.java
 src/main/resources/com/calculator/
   └─ GUI.fxml
+```
 
 Usage
 
