@@ -73,7 +73,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDivision" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
@@ -118,7 +118,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button layoutX="91.0" layoutY="321.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button layoutX="91.0" layoutY="321.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMultiplication" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
