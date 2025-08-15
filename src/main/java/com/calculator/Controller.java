@@ -28,6 +28,12 @@ public class Controller {
 	}
 	
 	@FXML
+	private void onClearAll(ActionEvent e) {
+		display.clear();
+		history.setText("");
+	}
+	
+	@FXML
 	private void onAddition(ActionEvent e) {
 		if(!(display.getText().isEmpty() && display.getText() == null)) {
 			String d =((Button) e.getSource()).getText();
